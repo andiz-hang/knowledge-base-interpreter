@@ -1,0 +1,42 @@
+
+wings <-- can_fly
+
+reptile <-- scaly & cold_blooded & lays_eggs & vertebrate
+mammal <-- warm_blooded & vertebrate
+bird <-- lays_eggs & wings & feathers & warm_blooded & vertebrate
+
+bug <-- small & invertebrate & many_legs
+insect <-- bug & six_legs
+
+snake <-- reptile & no_legs
+turtle <-- reptile & shell & can_swim
+tortoise <-- reptile & shell & four_legs
+chameleon <-- reptile & four_legs & colourful
+
+elephant <-- mammal & big & tusks & four_legs & hide & smart
+rhino <-- mammal & big & horns & four_legs & hide
+ram <-- mammal & horns & fur
+whale <-- mammal & can_swim & big & no_legs
+dolphin <-- mammal & can_swim & no_legs & smart
+otter <-- mammal & can_swim & fur & four_legs
+bat <-- mammal & wings & can_fly & nocturnal
+mole <-- mammal & fur & four_legs & digs
+bear <-- mammal & fur & four_legs & big
+horse <-- mammal & fur & four_legs & fast
+
+owl <-- bird & nocturnal & can_fly
+eagle <-- bird & fast & can_fly
+ostrich <-- bird & big
+penguin <-- bird & can_swim
+duck <-- bird & can_swim & can_fly
+crow <-- bird & smart & can_fly
+peacock <-- bird & colourful
+
+ant <-- insect & has_queen & digs & antennae
+bee <-- insect & has_queen & can_fly & antennae
+butterfly <-- insect & can_fly & colourful
+
+spider <-- bug & eight_legs & spins_web
+snail <-- bug & slimy & shell & no_legs
+slug <-- bug & slimy & antennae & no_legs
+worm <-- bug & digs & no_legs & slimy
