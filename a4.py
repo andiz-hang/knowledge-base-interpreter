@@ -151,7 +151,48 @@ def tell(tokens_line):
     return tokens
 
 def infer_all(kb):
-    return
+    # Checks if all conditions of a rule is satisfied
+    def is_rule_satisfied(atoms, conditions):
+        for condition in conditions:
+            if condition not in atoms:
+                return False
+        
+        return True
+    
+    def satisfied_heads(rules, atoms, new_atoms):
+        all_atoms = atoms + new_atoms
+        satisfied = []
+        for head in rules:
+            if head in all_atoms:
+                continue
+            if is_rule_satisfied(all_atoms, rules[head]):
+                satisfied.append(head)
+
+        return satisfied
+    
+    rules = kb.rules
+    atoms = kb.atoms
+
+    if not kb.rules:
+        printError("Error: knowledge base must have at least one rule")
+        return
+
+    if not kb.atoms:
+        printError("Error: knowledge base must have at least one atom")
+        return
+    
+    new_atoms = []
+
+    while (True):
+        heads = satisfied_heads(rules, atoms, new_atoms)
+
+        if not heads:
+            break
+
+        new_atoms += heads
+
+    return new_atoms
+             
 
 def main():
     kb = KB()
@@ -189,7 +230,17 @@ def main():
         
         # Infer All command
         elif text[:9] == "infer_all":
-            infer_all(kb)
+            inferred_atoms = infer_all(kb)
+
+            if inferred_atoms:
+                print ("Newly inferred atoms:")
+                print ("     " + str(inferred_atoms))
+                print ("Atoms already known to be true:")
+                print ("     " + str(kb.atoms))
+                print()
+
+                for atom in inferred_atoms:
+                    kb.add_atom(atom)
 
         else:
             printError("Error: unknown command \"" + text + "\"")
