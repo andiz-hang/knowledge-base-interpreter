@@ -129,7 +129,10 @@ def load(filename):
         printError ("Error: file '" + filename + "' not found")
         return
 
-    return interpret_file(kbFile.read())
+    kb_dict = interpret_file(kbFile.read())
+    kbFile.close()
+
+    return kb_dict
     
 def tell(tokens_line):
     tokens = tokens_line.strip()
