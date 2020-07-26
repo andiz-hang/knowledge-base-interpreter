@@ -1,17 +1,19 @@
-
 wings <-- can_fly
+many_legs <-- eight_legs
 
 reptile <-- scaly & cold_blooded & lays_eggs & vertebrate
 mammal <-- warm_blooded & vertebrate
 bird <-- lays_eggs & wings & feathers & warm_blooded & vertebrate
+fish <-- lays_eggs & can_swim & vertebrate
 
-bug <-- small & invertebrate & many_legs
-insect <-- bug & six_legs
+bug <-- small & invertebrate
+insect <-- bug & six_legs & antennae
 
-snake <-- reptile & no_legs
+snake <-- reptile & no_legs & poisonous
 turtle <-- reptile & shell & can_swim
 tortoise <-- reptile & shell & four_legs
 chameleon <-- reptile & four_legs & colourful
+crocodile <-- reptile & four_legs & can_swim
 
 elephant <-- mammal & big & tusks & four_legs & hide & smart
 rhino <-- mammal & big & horns & four_legs & hide
@@ -32,11 +34,24 @@ duck <-- bird & can_swim & can_fly
 crow <-- bird & smart & can_fly
 peacock <-- bird & colourful
 
-ant <-- insect & has_queen & digs & antennae
-bee <-- insect & has_queen & can_fly & antennae
-butterfly <-- insect & can_fly & colourful
+shark <-- fish & fast
+clownfish <-- fish & colourful
+eel <-- fish & slimy
+stingray <-- fish & poisonous
 
-spider <-- bug & eight_legs & spins_web
+ant <-- insect & has_queen & digs
+bee <-- insect & has_queen & can_fly
+butterfly <-- insect & can_fly & colourful
+beetle <-- insect & shell & digs
+
+spider <-- bug & eight_legs & spins_web & poisonous
 snail <-- bug & slimy & shell & no_legs
 slug <-- bug & slimy & antennae & no_legs
 worm <-- bug & digs & no_legs & slimy
+millipede <-- bug & many_legs & shell
+centipede <-- bug & many_legs & poisonous
+
+octopus <-- invertebrate & can_swim & smart & eight_legs
+squid <-- invertebrate & can_swim & many_legs
+crab <-- invertebrate & many_legs & shell
+jellyfish <-- invertebrate & many_legs & poisonous
