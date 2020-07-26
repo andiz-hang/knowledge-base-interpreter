@@ -1,0 +1,7 @@
+Andi Zhang - 301332070
+
+1 person team
+
+Project: Fast Implementations of WalkSAT and Resolution Proving
+
+C++ with standard c++ libraries such as <iostream>, <string> and others
