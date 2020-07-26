@@ -4,40 +4,74 @@ many_legs <-- eight_legs
 reptile <-- scaly & cold_blooded & lays_eggs & vertebrate
 mammal <-- warm_blooded & vertebrate
 bird <-- lays_eggs & wings & feathers & warm_blooded & vertebrate
-fish <-- lays_eggs & can_swim & vertebrate
+fish <-- lays_eggs & can_swim & no_legs & vertebrate
+amphibian <-- slimy & can_swim & vertebrate
 
 bug <-- small & invertebrate
 insect <-- bug & six_legs & antennae
 
-snake <-- reptile & no_legs & poisonous
+snake <-- reptile & no_legs & poisonous & long
+sidewinder <-- snake & digs
 turtle <-- reptile & shell & can_swim
 tortoise <-- reptile & shell & four_legs
 chameleon <-- reptile & four_legs & colourful
-crocodile <-- reptile & four_legs & can_swim
+crocodile <-- reptile & four_legs & can_swim & spined
 
 elephant <-- mammal & big & tusks & four_legs & hide & smart
 rhino <-- mammal & big & horns & four_legs & hide
+hippo <-- mammal & big & hide & can_swim & four_legs
 ram <-- mammal & horns & fur
 whale <-- mammal & can_swim & big & no_legs
+moby_dick <-- whale & white
+blue_whale <-- whale & massive
 dolphin <-- mammal & can_swim & no_legs & smart
+beluga <-- mammal & can_swim & no_legs & white & cold_climate
+narwhal <-- mammal & can_swim & no_legs & cold_climate & horns
 otter <-- mammal & can_swim & fur & four_legs
 bat <-- mammal & wings & can_fly & nocturnal
 mole <-- mammal & fur & four_legs & digs
 bear <-- mammal & fur & four_legs & big
+polar_bear <-- bear & white & cold_climate & swims
+panda <-- bear & black_white
 horse <-- mammal & fur & four_legs & fast
+zebra <-- horse & black_white
+walrus <-- mammal & fur & can_swim & tusks
+platypus <-- mammal & fur & can_swim & lays_eggs
+echidna <-- mammal & spined & lays_eggs
+kangaroo <-- mammal & fur & leaps
+armadillo <-- mammal & shell & four_legs & digs & curls_up
+deer <-- mammal & four_legs & horns & leaps
+antelope <-- mammal & four_legs & horns & fast
+giraffe <-- mammal & four_legs & fur & long & big
+caribou <-- mammal & four_legs & fur & cold_climate & horns
+rabbit <-- mammal & four_legs & fur & leaps
+snowshoe_hare <-- rabbit & white & cold_climate
+cow <-- mammal & four_legs & black_white
 
 owl <-- bird & nocturnal & can_fly
+snowy_owl <-- owl & white & cold_climate
 eagle <-- bird & fast & can_fly
 ostrich <-- bird & big
-penguin <-- bird & can_swim
+penguin <-- bird & can_swim & black_white & cold_climate
+emperor_penguin <-- penguin & big
 duck <-- bird & can_swim & can_fly
+swan <-- duck & white
 crow <-- bird & smart & can_fly
 peacock <-- bird & colourful
+toucan <-- bird & colourful
 
 shark <-- fish & fast
+great_white_shark <-- shark & big & white
 clownfish <-- fish & colourful
-eel <-- fish & slimy
-stingray <-- fish & poisonous
+eel <-- fish & slimy & long
+stingray <-- fish & poisonous & flat & digs
+manta_ray <-- fish & flat & white
+flounder <-- fish & flat & digs
+lionfish <-- fish & colourful & poisonous & spined
+
+frog <-- amphibian & four_legs & leaps
+poison_dart_frog <-- frog & poisonous
+salamander <-- amphibian & four_legs & nocturnal
 
 ant <-- insect & has_queen & digs
 bee <-- insect & has_queen & can_fly
@@ -45,13 +79,21 @@ butterfly <-- insect & can_fly & colourful
 beetle <-- insect & shell & digs
 
 spider <-- bug & eight_legs & spins_web & poisonous
+jumping_spider <-- spider & leaps
+tarantula <-- spider & spined
 snail <-- bug & slimy & shell & no_legs
 slug <-- bug & slimy & antennae & no_legs
-worm <-- bug & digs & no_legs & slimy
-millipede <-- bug & many_legs & shell
-centipede <-- bug & many_legs & poisonous
+worm <-- bug & digs & no_legs & slimy & long
+millipede <-- bug & many_legs & shell & long
+centipede <-- bug & many_legs & poisonous & long
+grasshopper <-- bug & leaps
+woodlouse <-- bug & curls_up
 
 octopus <-- invertebrate & can_swim & smart & eight_legs
 squid <-- invertebrate & can_swim & many_legs
+giant_squid <-- squid & big
+colossal_squid <-- squid & massive
 crab <-- invertebrate & many_legs & shell
-jellyfish <-- invertebrate & many_legs & poisonous
+jellyfish <-- invertebrate & many_legs & poisonous & can_swim
+lions_mane <-- jellyfish & long
+sea_urchin <-- invertebrate & no_legs & spined
