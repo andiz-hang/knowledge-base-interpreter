@@ -3,7 +3,7 @@ many_legs <-- eight_legs
 
 reptile <-- scaly & cold_blooded & lays_eggs & vertebrate
 mammal <-- warm_blooded & vertebrate
-bird <-- lays_eggs & wings & feathers & warm_blooded & vertebrate
+bird <-- lays_eggs & wings & vertebrate
 fish <-- lays_eggs & can_swim & no_legs & vertebrate
 amphibian <-- slimy & can_swim & vertebrate
 
@@ -31,7 +31,7 @@ otter <-- mammal & can_swim & fur & four_legs
 bat <-- mammal & wings & can_fly & nocturnal
 mole <-- mammal & fur & four_legs & digs
 bear <-- mammal & fur & four_legs & big
-polar_bear <-- bear & white & cold_climate & swims
+polar_bear <-- bear & white & cold_climate & can_swim
 panda <-- bear & black_white
 horse <-- mammal & fur & four_legs & fast
 zebra <-- horse & black_white
@@ -46,16 +46,18 @@ giraffe <-- mammal & four_legs & fur & long & big
 caribou <-- mammal & four_legs & fur & cold_climate & horns
 rabbit <-- mammal & four_legs & fur & leaps
 snowshoe_hare <-- rabbit & white & cold_climate
-cow <-- mammal & four_legs & black_white
+cow <-- mammal & four_legs & black_white & farm
 
 owl <-- bird & nocturnal & can_fly
 snowy_owl <-- owl & white & cold_climate
+barn_owl <-- owl & farm
 eagle <-- bird & fast & can_fly
 ostrich <-- bird & big
 penguin <-- bird & can_swim & black_white & cold_climate
 emperor_penguin <-- penguin & big
 duck <-- bird & can_swim & can_fly
 swan <-- duck & white
+chicken <-- bird & white & farm
 crow <-- bird & smart & can_fly
 peacock <-- bird & colourful
 toucan <-- bird & colourful

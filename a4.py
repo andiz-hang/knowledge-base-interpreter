@@ -30,11 +30,15 @@ class KB(object):
         self.atoms.append(atom)
         print ("Added '" + atom + "' to the knowledge base")
 
-    def clear(self):
+    def clear_all(self):
         self.rules = {}
         self.update_num_rules()
         self.atoms = []
         print ("Cleared all rules and atoms from the knowledge base")
+
+    def clear_atoms(self):
+        self.atoms = []
+        print ("Cleared all atoms from the knowledge base")
 
     def print_rules(self):
         rules = self.rules
@@ -158,6 +162,7 @@ def infer_all(kb):
         
         return True
     
+    # Find all the satisfied heads from a set of rules
     def satisfied_heads(rules, atoms, new_atoms):
         all_atoms = atoms + new_atoms
         satisfied = []
@@ -224,8 +229,12 @@ def main():
             print(kb)
 
         # Clear all data from kb
-        elif text[:5] == "clear":
-            kb.clear()
+        elif text[:9] == "clear_all":
+            kb.clear_all()
+
+        # Clear all data from kb
+        elif text[:11] == "clear_atoms":
+            kb.clear_atoms()
         
         # Infer All command
         elif text[:9] == "infer_all":
@@ -240,6 +249,8 @@ def main():
 
                 for atom in inferred_atoms:
                     kb.add_atom(atom)
+            else:
+                print ("No atoms inferred")
 
         else:
             printError("Error: unknown command \"" + text + "\"")
